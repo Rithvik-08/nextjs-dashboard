@@ -88,7 +88,6 @@ const UpdateInvoice = FormSchema.omit({ id: true, date: true });
  
 export async function updateInvoice(
   id: string,
-  prevState: State,
   formData: FormData,
 ) {
   const validatedFields = UpdateInvoice.safeParse({
